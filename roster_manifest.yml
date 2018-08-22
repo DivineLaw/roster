@@ -1,0 +1,11 @@
+applications:
+- name: roster_con
+  random-route: true
+  instances: 1
+  memory: 750M
+  buildpack: java_buildpack
+  path: /Users/damien.mcpherson/projects/cloudfoundry/roster/build/libs/roster.jar
+  env:
+    ROSTER_A: avalue
+    ROSTER_B: bvalue
+    ROSTER_C: cvalue
