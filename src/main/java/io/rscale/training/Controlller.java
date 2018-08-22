@@ -25,7 +25,7 @@ public class Controlller {
 	
 	@RequestMapping("/details")
     public String details(Model model) throws SQLException {
-		
+		System.out.println("Hello");
 		model.addAttribute("appId", appInfo.getAppId());
 		model.addAttribute("appName", appInfo.getAppName());
 		model.addAttribute("appUris", appInfo.getAppUris());
